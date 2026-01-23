@@ -10,7 +10,7 @@ Setting up a repo from scratch.
 - Gather study data and store locally.
 - Gather pipeline specific data and store locally.
 - Add gitignore
-
+- Add and run requirements.txt
 
 
 Using the pipeline-utils to create the first pipeline.
