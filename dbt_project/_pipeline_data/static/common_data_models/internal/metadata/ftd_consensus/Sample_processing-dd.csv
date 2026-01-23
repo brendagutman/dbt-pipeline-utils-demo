@@ -1,0 +1,3 @@
+variable_name,variable_description,data_type,min,max,units,enumerations,comment,tests
+Sample_id,Autocreated FK slot,string,,,,,Foreign Key: Sample.id,not_null
+processing,Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded this distinct sample,string,,,,,,

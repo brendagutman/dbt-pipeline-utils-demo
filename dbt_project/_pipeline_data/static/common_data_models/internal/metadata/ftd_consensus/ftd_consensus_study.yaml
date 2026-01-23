@@ -1,0 +1,93 @@
+model_name: ftd_consensus
+model_prefix: ftd
+data_dictionary:
+  Sample_storage_method:
+    identifier: Sample_storage_method-dd.csv
+  Subject_external_id:
+    identifier: Subject_external_id-dd.csv
+  SubjectAssertion_external_id:
+    identifier: SubjectAssertion_external_id-dd.csv
+  Family_external_id:
+    identifier: Family_external_id-dd.csv
+  Study_principal_investigator:
+    identifier: Study_principal_investigator-dd.csv
+  AccessPolicy_external_id:
+    identifier: AccessPolicy_external_id-dd.csv
+  Family_family_relationships:
+    identifier: Family_family_relationships-dd.csv
+  File:
+    identifier: File-dd.csv
+  FamilyRelationship:
+    identifier: FamilyRelationship-dd.csv
+  File_sample:
+    identifier: File_sample-dd.csv
+  Study_external_id:
+    identifier: Study_external_id-dd.csv
+  SourceData:
+    identifier: SourceData-dd.csv
+  Aliquot_external_id:
+    identifier: Aliquot_external_id-dd.csv
+  AccessControlledRecord_external_id:
+    identifier: AccessControlledRecord_external_id-dd.csv
+  DataSource:
+    identifier: DataSource-dd.csv
+  File_external_id:
+    identifier: File_external_id-dd.csv
+  Study:
+    identifier: Study-dd.csv
+  Demographics_external_id:
+    identifier: Demographics_external_id-dd.csv
+  Subject:
+    identifier: Subject-dd.csv
+  Family:
+    identifier: Family-dd.csv
+  BiospecimenCollection_external_id:
+    identifier: BiospecimenCollection_external_id-dd.csv
+  SubjectAssertion_source_data:
+    identifier: SubjectAssertion_source_data-dd.csv
+  Demographics_source_data:
+    identifier: Demographics_source_data-dd.csv
+  Demographics_race:
+    identifier: Demographics_race-dd.csv
+  Sample:
+    identifier: Sample-dd.csv
+  File_subject:
+    identifier: File_subject-dd.csv
+  FamilyRelationship_external_id:
+    identifier: FamilyRelationship_external_id-dd.csv
+  AccessPolicy_access_policy_code:
+    identifier: AccessPolicy_access_policy_code-dd.csv
+  SourceData_query_parameter:
+    identifier: SourceData_query_parameter-dd.csv
+  Sample_processing:
+    identifier: Sample_processing-dd.csv
+  Demographics:
+    identifier: Demographics-dd.csv
+  Aliquot:
+    identifier: Aliquot-dd.csv
+  SubjectAssertion:
+    identifier: SubjectAssertion-dd.csv
+  AccessControlledRecord:
+    identifier: AccessControlledRecord-dd.csv
+  FileMetadata:
+    identifier: FileMetadata-dd.csv
+  DataSource_external_id:
+    identifier: DataSource_external_id-dd.csv
+  FileMetadata_external_id:
+    identifier: FileMetadata_external_id-dd.csv
+  FamilyMember_external_id:
+    identifier: FamilyMember_external_id-dd.csv
+  Study_funding_source:
+    identifier: Study_funding_source-dd.csv
+  AccessPolicy:
+    identifier: AccessPolicy-dd.csv
+  FamilyMember:
+    identifier: FamilyMember-dd.csv
+  SourceData_external_id:
+    identifier: SourceData_external_id-dd.csv
+  Sample_external_id:
+    identifier: Sample_external_id-dd.csv
+  BiospecimenCollection:
+    identifier: BiospecimenCollection-dd.csv
+  AccessPolicy_data_access_type:
+    identifier: AccessPolicy_data_access_type-dd.csv

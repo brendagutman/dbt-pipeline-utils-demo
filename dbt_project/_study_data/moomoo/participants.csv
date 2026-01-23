@@ -1,0 +1,15 @@
+Study Code,Participant Global ID,Participant External ID,Family ID,Family Type,Father ID,Mother ID,Sibling ID,Other Family Member ID,Family Relationship,Sex,Race,Ethnicity,Down Syndrome Status,Age at First Patient Engagement,First Patient Engagement Event,Outcomes Vital Status,Age at Last Vital Status
+M00M00,pt-kjn3a3jtnk,M00_001,,Control-only,,,,,Unrelated control,Female,White,Hispanic or Latino,T21,6654,Enrollment,Unknown or Not Available,6810
+M00M00,pt-c8myqafx3g,M00_002,,Proband-only,,,,,Proband,Female,Black or African American,Unknown,T21,6600,Enrollment,Alive,6778
+M00M00,pt-byfknfkgtt,M00_003,,Control-only,,,,,Unrelated control,Male,White,Hispanic or Latino,D21,8552,Enrollment,Alive,8717
+M00M00,pt-dw2hea7qxy,M00_004,,Proband-only,,,,,Proband,Male,More than one race,Prefer not to answer,T21,7852,Enrollment,Alive,8039
+M00M00,pt-rijy6abmqr,M00_005,,Proband-only,,,,,Proband,Male,White,Not Hispanic or Latino,T21,10220,Enrollment,Unknown or Not Available,10405
+M00M00,pt-azenpi8b87,M00_006,,Proband-only,,,,,Proband,Female,More than one race,Not Hispanic or Latino,D21,22364,Enrollment,Alive,22523
+M00M00,pt-2k9rqgr4xw,M00_007,,Proband-only,,,,,Proband,Male,White,Not Hispanic or Latino,D21,23365,Enrollment,Alive,23552
+M00M00,pt-hxdj2xnt4b,M00_008,,Proband-only,,,,,Proband,Female,Asian,Not Hispanic or Latino,T21,27491,Enrollment,Alive,27660
+M00M00,pt-7bhgbnr3we,M00_009,,Proband-only,,,,,Proband,Female,More than one race,Unknown,T21,6658,Enrollment,Alive,6824
+M00M00,pt-hke2i6daky,M00_010,M00_F01,Duo,M00_011,,,,Father,Male,Asian,Not Hispanic or Latino,T21,15895,Enrollment,Unknown or Not Available,16073
+M00M00,pt-3ywazybjey,M00_011,M00_F01,Duo,,,,M00_010,Proband,Female,More than one race,Not Hispanic or Latino,T21,6852,Enrollment,Alive,7052
+M00M00,pt-22xagzq2c4,M00_012,M00_F02,Trio,M00_014,M00_013,,,Proband,Male,Black or African American,Prefer not to answer,T21,8554,Enrollment,Alive,8689
+M00M00,pt-2f4jwwpzi8,M00_013,M00_F02,Trio,M00_014,,,M00_012,Mother,Female,Black or African American,Hispanic or Latino,T21,21685,Enrollment,Alive,21863
+M00M00,pt-qb8pj3i4az,M00_014,M00_F02,Trio,,M00_013,,M00_012,Father,Male,Black or African American,Not Hispanic or Latino,T21,21586,Enrollment,Dead,21763

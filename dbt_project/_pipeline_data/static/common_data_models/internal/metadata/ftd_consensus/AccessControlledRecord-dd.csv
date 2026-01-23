@@ -1,0 +1,3 @@
+variable_name,variable_description,data_type,min,max,units,enumerations,comment,tests
+has_access_policy,Which access policy applies to this element?,string,,,,,Foreign Key: AccessPolicy.id,not_null
+id,ID associated with a class,string,,,,,,not_null

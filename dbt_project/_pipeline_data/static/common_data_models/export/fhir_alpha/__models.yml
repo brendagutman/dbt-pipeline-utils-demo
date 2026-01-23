@@ -1,0 +1,308 @@
+models:
+- name: fhir_alpha_concept
+  description: Model for fhir_alpha_concept.
+  columns:
+  - name: concept_curie
+    description: '{{ doc("fhir_alpha_concept_concept_curie") }}'
+  - name: display
+    description: '{{ doc("fhir_alpha_concept_display") }}'
+- name: fhir_alpha_study_participant_lifespan_stage
+  description: Model for fhir_alpha_study_participant_lifespan_stage.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_participant_lifespan_stage_study_study_id")
+      }}'
+  - name: participant_lifespan_stage
+    description: '{{ doc("fhir_alpha_study_participant_lifespan_stage_partici_4575b222")
+      }}'
+- name: fhir_alpha_doi
+  description: Model for fhir_alpha_doi.
+  columns:
+  - name: doi
+    description: '{{ doc("fhir_alpha_doi_doi") }}'
+  - name: bibliographic_reference
+    description: '{{ doc("fhir_alpha_doi_bibliographic_reference") }}'
+- name: fhir_alpha_study_principal_investigator
+  description: Model for fhir_alpha_study_principal_investigator.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_principal_investigator_study_study_id")
+      }}'
+  - name: principal_investigator_id
+    description: '{{ doc("fhir_alpha_study_principal_investigator_principal_i_29920ca5")
+      }}'
+- name: fhir_alpha_doi_external_id
+  description: Model for fhir_alpha_doi_external_id.
+  columns:
+  - name: DOI_doi
+    description: '{{ doc("fhir_alpha_doi_external_id_doi_doi") }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_doi_external_id_external_id") }}'
+- name: fhir_alpha_study_program
+  description: Model for fhir_alpha_study_program.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_program_study_study_id") }}'
+  - name: program
+    description: '{{ doc("fhir_alpha_study_program_program") }}'
+- name: fhir_alpha_demographics
+  description: Model for fhir_alpha_demographics.
+  columns:
+  - name: subject_id
+    description: '{{ doc("fhir_alpha_demographics_subject_id") }}'
+  - name: sex
+    description: '{{ doc("fhir_alpha_demographics_sex") }}'
+  - name: ethnicity
+    description: '{{ doc("fhir_alpha_demographics_ethnicity") }}'
+  - name: down_syndrome_status
+    description: '{{ doc("fhir_alpha_demographics_down_syndrome_status") }}'
+  - name: age_at_last_vital_status
+    description: '{{ doc("fhir_alpha_demographics_age_at_last_vital_status") }}'
+  - name: vital_status
+    description: '{{ doc("fhir_alpha_demographics_vital_status") }}'
+  - name: age_at_first_engagement
+    description: '{{ doc("fhir_alpha_demographics_age_at_first_engagement") }}'
+- name: fhir_alpha_study_publication
+  description: Model for fhir_alpha_study_publication.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_publication_study_study_id") }}'
+  - name: publication_id
+    description: '{{ doc("fhir_alpha_study_publication_publication_id") }}'
+- name: fhir_alpha_demographics_external_id
+  description: Model for fhir_alpha_demographics_external_id.
+  columns:
+  - name: Demographics_subject_id
+    description: '{{ doc("fhir_alpha_demographics_external_id_demographics_subject_id")
+      }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_demographics_external_id_external_id") }}'
+- name: fhir_alpha_study_research_domain
+  description: Model for fhir_alpha_study_research_domain.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_research_domain_study_study_id") }}'
+  - name: research_domain
+    description: '{{ doc("fhir_alpha_study_research_domain_research_domain") }}'
+- name: fhir_alpha_demographics_race
+  description: Model for fhir_alpha_demographics_race.
+  columns:
+  - name: Demographics_subject_id
+    description: '{{ doc("fhir_alpha_demographics_race_demographics_subject_id") }}'
+  - name: race
+    description: '{{ doc("fhir_alpha_demographics_race_race") }}'
+- name: fhir_alpha_study_study_design
+  description: Model for fhir_alpha_study_study_design.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_study_design_study_study_id") }}'
+  - name: study_design
+    description: '{{ doc("fhir_alpha_study_study_design_study_design") }}'
+- name: fhir_alpha_investigator
+  description: Model for fhir_alpha_investigator.
+  columns:
+  - name: id
+    description: '{{ doc("fhir_alpha_investigator_id") }}'
+  - name: name
+    description: '{{ doc("fhir_alpha_investigator_name") }}'
+  - name: institution
+    description: '{{ doc("fhir_alpha_investigator_institution") }}'
+  - name: invesitgator_title
+    description: '{{ doc("fhir_alpha_investigator_invesitgator_title") }}'
+  - name: email
+    description: '{{ doc("fhir_alpha_investigator_email") }}'
+- name: fhir_alpha_subject
+  description: Model for fhir_alpha_subject.
+  columns:
+  - name: subject_id
+    description: '{{ doc("fhir_alpha_subject_subject_id") }}'
+  - name: subject_type
+    description: '{{ doc("fhir_alpha_subject_subject_type") }}'
+  - name: organism_type
+    description: '{{ doc("fhir_alpha_subject_organism_type") }}'
+- name: fhir_alpha_investigator_external_id
+  description: Model for fhir_alpha_investigator_external_id.
+  columns:
+  - name: Investigator_id
+    description: '{{ doc("fhir_alpha_investigator_external_id_investigator_id") }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_investigator_external_id_external_id") }}'
+- name: fhir_alpha_subjectassertion
+  description: Model for fhir_alpha_subjectassertion.
+  columns:
+  - name: assertion_id
+    description: '{{ doc("fhir_alpha_subjectassertion_assertion_id") }}'
+  - name: subject_id
+    description: '{{ doc("fhir_alpha_subjectassertion_subject_id") }}'
+  - name: assertion_provenance
+    description: '{{ doc("fhir_alpha_subjectassertion_assertion_provenance") }}'
+  - name: age_at_assertion
+    description: '{{ doc("fhir_alpha_subjectassertion_age_at_assertion") }}'
+  - name: age_at_event
+    description: '{{ doc("fhir_alpha_subjectassertion_age_at_event") }}'
+  - name: age_at_resolution
+    description: '{{ doc("fhir_alpha_subjectassertion_age_at_resolution") }}'
+  - name: concept_source
+    description: '{{ doc("fhir_alpha_subjectassertion_concept_source") }}'
+  - name: value_number
+    description: '{{ doc("fhir_alpha_subjectassertion_value_number") }}'
+  - name: value_source
+    description: '{{ doc("fhir_alpha_subjectassertion_value_source") }}'
+  - name: value_units
+    description: '{{ doc("fhir_alpha_subjectassertion_value_units") }}'
+  - name: value_units_source
+    description: '{{ doc("fhir_alpha_subjectassertion_value_units_source") }}'
+- name: fhir_alpha_publication
+  description: Model for fhir_alpha_publication.
+  columns:
+  - name: id
+    description: '{{ doc("fhir_alpha_publication_id") }}'
+  - name: bibliographic_reference
+    description: '{{ doc("fhir_alpha_publication_bibliographic_reference") }}'
+  - name: website
+    description: '{{ doc("fhir_alpha_publication_website") }}'
+- name: fhir_alpha_subjectassertion_concept
+  description: Model for fhir_alpha_subjectassertion_concept.
+  columns:
+  - name: SubjectAssertion_assertion_id
+    description: '{{ doc("fhir_alpha_subjectassertion_concept_subjectassertio_00fb853f")
+      }}'
+  - name: concept_concept_curie
+    description: '{{ doc("fhir_alpha_subjectassertion_concept_concept_concept_curie")
+      }}'
+- name: fhir_alpha_publication_external_id
+  description: Model for fhir_alpha_publication_external_id.
+  columns:
+  - name: Publication_id
+    description: '{{ doc("fhir_alpha_publication_external_id_publication_id") }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_publication_external_id_external_id") }}'
+- name: fhir_alpha_subjectassertion_external_id
+  description: Model for fhir_alpha_subjectassertion_external_id.
+  columns:
+  - name: SubjectAssertion_assertion_id
+    description: '{{ doc("fhir_alpha_subjectassertion_external_id_subjectasse_05e3ebbe")
+      }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_subjectassertion_external_id_external_id") }}'
+- name: fhir_alpha_record_external_id
+  description: Model for fhir_alpha_record_external_id.
+  columns:
+  - name: Record_id
+    description: '{{ doc("fhir_alpha_record_external_id_record_id") }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_record_external_id_external_id") }}'
+- name: fhir_alpha_subjectassertion_value_concept
+  description: Model for fhir_alpha_subjectassertion_value_concept.
+  columns:
+  - name: SubjectAssertion_assertion_id
+    description: '{{ doc("fhir_alpha_subjectassertion_value_concept_subjectas_5d6864dc")
+      }}'
+  - name: value_concept_concept_curie
+    description: '{{ doc("fhir_alpha_subjectassertion_value_concept_value_con_8d47fd6b")
+      }}'
+- name: fhir_alpha_study
+  description: Model for fhir_alpha_study.
+  columns:
+  - name: study_id
+    description: '{{ doc("fhir_alpha_study_study_id") }}'
+  - name: parent_study
+    description: '{{ doc("fhir_alpha_study_parent_study") }}'
+  - name: study_title
+    description: '{{ doc("fhir_alpha_study_study_title") }}'
+  - name: study_code
+    description: '{{ doc("fhir_alpha_study_study_code") }}'
+  - name: study_short_name
+    description: '{{ doc("fhir_alpha_study_study_short_name") }}'
+  - name: study_description
+    description: '{{ doc("fhir_alpha_study_study_description") }}'
+  - name: selection_criteria
+    description: '{{ doc("fhir_alpha_study_selection_criteria") }}'
+  - name: website
+    description: '{{ doc("fhir_alpha_study_website") }}'
+  - name: expected_number_of_participants
+    description: '{{ doc("fhir_alpha_study_expected_number_of_participants") }}'
+  - name: actual_number_of_participants
+    description: '{{ doc("fhir_alpha_study_actual_number_of_participants") }}'
+  - name: acknowledgments
+    description: '{{ doc("fhir_alpha_study_acknowledgments") }}'
+  - name: citation_statement
+    description: '{{ doc("fhir_alpha_study_citation_statement") }}'
+  - name: doi
+    description: '{{ doc("fhir_alpha_study_doi") }}'
+  - name: vbr_id
+    description: '{{ doc("fhir_alpha_study_vbr_id") }}'
+- name: fhir_alpha_subject_external_id
+  description: Model for fhir_alpha_subject_external_id.
+  columns:
+  - name: Subject_subject_id
+    description: '{{ doc("fhir_alpha_subject_external_id_subject_subject_id") }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_subject_external_id_external_id") }}'
+- name: fhir_alpha_study_clinical_data_source_type
+  description: Model for fhir_alpha_study_clinical_data_source_type.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_clinical_data_source_type_study_study_id")
+      }}'
+  - name: clinical_data_source_type
+    description: '{{ doc("fhir_alpha_study_clinical_data_source_type_clinical_907c3be6")
+      }}'
+- name: fhir_alpha_virtualbiorepository
+  description: Model for fhir_alpha_virtualbiorepository.
+  columns:
+  - name: id
+    description: '{{ doc("fhir_alpha_virtualbiorepository_id") }}'
+  - name: name
+    description: '{{ doc("fhir_alpha_virtualbiorepository_name") }}'
+  - name: institution
+    description: '{{ doc("fhir_alpha_virtualbiorepository_institution") }}'
+  - name: website
+    description: '{{ doc("fhir_alpha_virtualbiorepository_website") }}'
+  - name: vbr_readme
+    description: '{{ doc("fhir_alpha_virtualbiorepository_vbr_readme") }}'
+- name: fhir_alpha_study_contact
+  description: Model for fhir_alpha_study_contact.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_contact_study_study_id") }}'
+  - name: contact_id
+    description: '{{ doc("fhir_alpha_study_contact_contact_id") }}'
+- name: fhir_alpha_virtualbiorepository_contact
+  description: Model for fhir_alpha_virtualbiorepository_contact.
+  columns:
+  - name: VirtualBiorepository_id
+    description: '{{ doc("fhir_alpha_virtualbiorepository_contact_virtualbior_67f50e04")
+      }}'
+  - name: contact_id
+    description: '{{ doc("fhir_alpha_virtualbiorepository_contact_contact_id") }}'
+- name: fhir_alpha_study_data_category
+  description: Model for fhir_alpha_study_data_category.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_data_category_study_study_id") }}'
+  - name: data_category
+    description: '{{ doc("fhir_alpha_study_data_category_data_category") }}'
+- name: fhir_alpha_virtualbiorepository_external_id
+  description: Model for fhir_alpha_virtualbiorepository_external_id.
+  columns:
+  - name: VirtualBiorepository_id
+    description: '{{ doc("fhir_alpha_virtualbiorepository_external_id_virtual_02bc64d6")
+      }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_virtualbiorepository_external_id_external_id")
+      }}'
+- name: fhir_alpha_study_external_id
+  description: Model for fhir_alpha_study_external_id.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_external_id_study_study_id") }}'
+  - name: external_id
+    description: '{{ doc("fhir_alpha_study_external_id_external_id") }}'
+- name: fhir_alpha_study_funding_source
+  description: Model for fhir_alpha_study_funding_source.
+  columns:
+  - name: Study_study_id
+    description: '{{ doc("fhir_alpha_study_funding_source_study_study_id") }}'
+  - name: funding_source
+    description: '{{ doc("fhir_alpha_study_funding_source_funding_source") }}'

@@ -1,0 +1,3 @@
+variable_name,variable_description,data_type,min,max,units,enumerations,comment,tests
+Demographics_id,Autocreated FK slot,string,,,,,Foreign Key: Demographics.id,not_null
+source_data_id,The sources from which this assertion was derived,string,,,,,Foreign Key: SourceData.id,not_null

@@ -1,0 +1,159 @@
+Study Code,Participant Global ID,Participant External ID,Event ID,Event Type,Condition or Measure Source Text,Age at Condition or Measure Observation,Condition Interpretation,Condition Status,Condition Data Source,HPO Label,HPO Code,MONDO Label,MONDO Code,MAXO Label,MAXO Code,Other Label,Other Code,Measure Value,Measure Unit
+M00M00,pt-kjn3a3jtnk,M00_001,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-kjn3a3jtnk,M00_001,1,Visit,Hypothyroidism,,Observed,History Of,Self-Reported,Hypothyroidism,HP:0000821,hypothyroidism,MONDO:0005420,,,,,,
+M00M00,pt-kjn3a3jtnk,M00_001,1,Visit,Low Vitamin D,,Observed,History Of,Self-Reported,Low levels of vitamin D,HP:0100512,vitamin D deficiency,MONDO:0100471,,,,,,
+M00M00,pt-kjn3a3jtnk,M00_001,1,Visit,BMI,6654,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,24.70168993,kg/m2
+M00M00,pt-kjn3a3jtnk,M00_001,1,Visit,Weight,6654,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,66.3,kg
+M00M00,pt-kjn3a3jtnk,M00_001,1,Visit,Height,6654,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,163.83,cm
+M00M00,pt-kjn3a3jtnk,M00_001,2,Visit,BMI,6810,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,24.72486615,kg/m2
+M00M00,pt-kjn3a3jtnk,M00_001,2,Visit,Weight,6810,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,66.5,kg
+M00M00,pt-kjn3a3jtnk,M00_001,2,Visit,Height,6810,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,164,cm
+M00M00,pt-c8myqafx3g,M00_002,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-c8myqafx3g,M00_002,1,Visit,Depression,,Observed,History Of,Self-Reported,Depression,HP:0000716,depressive disorder,MONDO:0002050,,,,,,
+M00M00,pt-c8myqafx3g,M00_002,1,Visit,Uses Hearing Aids for Hearing Loss,,Observed,History Of,Self-Reported,Hearing impairment,HP:0000365,hearing loss disorder,MONDO:0005365,hearing aid usage,MAXO:0009030,,,,
+M00M00,pt-c8myqafx3g,M00_002,1,Visit,Sleep apnea,,Observed,History Of,Self-Reported,Obstructive sleep apnea,HP:0002870,obstructive sleep apnea syndrome,MONDO:0007147,,,,,,
+M00M00,pt-c8myqafx3g,M00_002,1,Visit,BMI,6600,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,19.65865507,kg/m2
+M00M00,pt-c8myqafx3g,M00_002,1,Visit,Weight,6600,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,55.63,kg
+M00M00,pt-c8myqafx3g,M00_002,1,Visit,Height,6600,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,168.22,cm
+M00M00,pt-c8myqafx3g,M00_002,2,Visit,BMI,6778,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,19.43018027,kg/m2
+M00M00,pt-c8myqafx3g,M00_002,2,Visit,Weight,6778,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,54.99,kg
+M00M00,pt-c8myqafx3g,M00_002,2,Visit,Height,6778,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,168.23,cm
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Cataracts,,Observed,History Of,Self-Reported,Cataract,HP:0000518,cataract (disease),MONDO:0005129,,,,,,
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Hyperlipidemia,,Observed,History Of,Self-Reported,Hyperlipidemia,HP:0003077,hyperlipidemia,MONDO:0021187,,,,,,
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Excessive daytime sleepiness,,Observed,History Of,Self-Reported,Excessive daytime somnolence,HP:0001262,,,,,,,,
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Ventricular septal defect (VSD),,Observed,History Of,Self-Reported,Ventricular septal defect,HP:0001629,ventricular septal defect (disease),MONDO:0002070,,,,,,
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Gastroesophageal reflux (GERD; acid reflux),,Observed,History Of,Self-Reported,Gastroesophageal reflux,HP:0002020,gastroesophageal reflux disease,MONDO:0007186,,,,,,
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,BMI,8552,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,21.21189861,kg/m2
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Weight,8552,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,85.4,kg
+M00M00,pt-byfknfkgtt,M00_003,1,Visit,Height,8552,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,200.65,cm
+M00M00,pt-byfknfkgtt,M00_003,2,Visit,BMI,8717,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,21.13918845,kg/m2
+M00M00,pt-byfknfkgtt,M00_003,2,Visit,Weight,8717,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,85.6,kg
+M00M00,pt-byfknfkgtt,M00_003,2,Visit,Height,8717,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,201.23,cm
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,Atrial septal defect (ASD),,Observed,History Of,Self-Reported,Atrial septal defect,HP:0001631,atrial septal defect,MONDO:0006664,,,,,,
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,Patent Ductus Arteriosus (PDA),,Observed,History Of,Self-Reported,Patent ductus arteriosus,HP:0001643,patent ductus arteriosus,MONDO:0011827,,,,,,
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,Other feeding problem,,Observed,History Of,Self-Reported,Feeding difficulties,HP:0011968,,,,,,,,
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,Insomnia (difficulty falling asleep or staying asleep),,Observed,History Of,Self-Reported,Insomnia,HP:0100785,insomnia,MONDO:0013600,,,,,,
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,BMI,7852,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,15.76997852,kg/m2
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,Weight,7852,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,54.3,kg
+M00M00,pt-dw2hea7qxy,M00_004,1,Visit,Height,7852,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,185.56,cm
+M00M00,pt-dw2hea7qxy,M00_004,2,Visit,BMI,8039,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,16.18235848,kg/m2
+M00M00,pt-dw2hea7qxy,M00_004,2,Visit,Weight,8039,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,55.78,kg
+M00M00,pt-dw2hea7qxy,M00_004,2,Visit,Height,8039,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,185.66,cm
+M00M00,pt-rijy6abmqr,M00_005,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-rijy6abmqr,M00_005,1,Visit,Ventricular septal defect (VSD),,Observed,History Of,Self-Reported,Ventricular septal defect,HP:0001629,ventricular septal defect (disease),MONDO:0002070,,,,,,
+M00M00,pt-rijy6abmqr,M00_005,1,Visit,Autism or Autism Spectrum Disorder (ASD),,Observed,History Of,Self-Reported,Autistic behavior,HP:0000729,autism spectrum disorder,MONDO:0005258,,,,,,
+M00M00,pt-rijy6abmqr,M00_005,1,Visit,Amblyopia (lazy eye),,Observed,History Of,Self-Reported,Amblyopia,HP:0000646,amblyopia (disease),MONDO:0001020,,,,,,
+M00M00,pt-rijy6abmqr,M00_005,1,Visit,BMI,10220,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,21.58086299,kg/m2
+M00M00,pt-rijy6abmqr,M00_005,1,Visit,Weight,10220,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,68.3,kg
+M00M00,pt-rijy6abmqr,M00_005,1,Visit,Height,10220,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,177.9,cm
+M00M00,pt-rijy6abmqr,M00_005,2,Visit,BMI,10405,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,21.28035774,kg/m2
+M00M00,pt-rijy6abmqr,M00_005,2,Visit,Weight,10405,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,67.88,kg
+M00M00,pt-rijy6abmqr,M00_005,2,Visit,Height,10405,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,178.6,cm
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Anxiety,,Observed,History Of,Self-Reported,Anxiety,HP:0000739,anxiety,MONDO:0011918,,,,,,
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Hypothyroidism,,Observed,History Of,Self-Reported,Hypothyroidism,HP:0000821,hypothyroidism,MONDO:0005420,,,,,,
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Developmental coordination disorder,,Observed,History Of,Self-Reported,,,developmental coordination disorder,MONDO:0004922,,,,,,
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Congenital heart defect repair,,Observed,History Of,Self-Reported,,,,,heart repair,MAXO:0025002,,,,
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Ear tubes,,Observed,History Of,Self-Reported,,,,,myringotomy and insertion of tympanic ventilation tube,MAXO:0009044,,,,
+M00M00,pt-azenpi8b87,M00_006,1,Visit,BMI,22364,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,28.38221839,kg/m2
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Weight,22364,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,58.69,kg
+M00M00,pt-azenpi8b87,M00_006,1,Visit,Height,22364,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,143.8,cm
+M00M00,pt-azenpi8b87,M00_006,2,Visit,BMI,22523,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,28.95188569,kg/m2
+M00M00,pt-azenpi8b87,M00_006,2,Visit,Weight,22523,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,59.66,kg
+M00M00,pt-azenpi8b87,M00_006,2,Visit,Height,22523,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,143.55,cm
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Atopic dermatitis/Eczema,,Observed,History Of,Self-Reported,Eczema,HP:0000964,atopic eczema,MONDO:0004980,,,,,,
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Boils,,Observed,History Of,Self-Reported,Chronic furunculosis,HP:0011132,furunculosis,MONDO:0025419,,,,,,
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Asthma,,Observed,History Of,Self-Reported,Asthma,HP:0002099,asthma,MONDO:0004979,,,,,,
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Congenital heart defect repair,,Observed,History Of,Self-Reported,,,,,heart repair,MAXO:0025002,,,,
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Atrial septal defect (ASD),,Observed,History Of,Self-Reported,Atrial septal defect,HP:0001631,atrial septal defect,MONDO:0006664,,,,,,
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Unknown hearing loss,,Observed,History Of,Self-Reported,Hearing impairment,HP:0000365,hearing loss disorder,MONDO:0005365,,,,,,
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,BMI,23365,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,15.96103724,kg/m2
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Weight,23365,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,71.6,kg
+M00M00,pt-2k9rqgr4xw,M00_007,1,Visit,Height,23365,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,211.8,cm
+M00M00,pt-2k9rqgr4xw,M00_007,2,Visit,BMI,23552,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,15.86998195,kg/m2
+M00M00,pt-2k9rqgr4xw,M00_007,2,Visit,Weight,23552,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,70.99,kg
+M00M00,pt-2k9rqgr4xw,M00_007,2,Visit,Height,23552,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,211.5,cm
+M00M00,pt-hxdj2xnt4b,M00_008,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-hxdj2xnt4b,M00_008,1,Visit,Cognitive decline,,Observed,History Of,Self-Reported,Mental deterioration,HP:0001268,,,,,,,,
+M00M00,pt-hxdj2xnt4b,M00_008,1,Visit,Ventricular septal defect (VSD),,Observed,History Of,Self-Reported,Ventricular septal defect,HP:0001629,ventricular septal defect (disease),MONDO:0002070,,,,,,
+M00M00,pt-hxdj2xnt4b,M00_008,1,Visit,ADD/ADHD,,Observed,History Of,Self-Reported,Attention deficit hyperactivity disorder,HP:0007018,attention deficit-hyperactivity disorder,MONDO:0007743,,,,,,
+M00M00,pt-hxdj2xnt4b,M00_008,1,Visit,BMI,27491,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,19.68770909,kg/m2
+M00M00,pt-hxdj2xnt4b,M00_008,1,Visit,Weight,27491,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,91.6,kg
+M00M00,pt-hxdj2xnt4b,M00_008,1,Visit,Height,27491,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,215.7,cm
+M00M00,pt-hxdj2xnt4b,M00_008,2,Visit,BMI,27660,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,19.83816101,kg/m2
+M00M00,pt-hxdj2xnt4b,M00_008,2,Visit,Weight,27660,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,92.3,kg
+M00M00,pt-hxdj2xnt4b,M00_008,2,Visit,Height,27660,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,215.7,cm
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Anxiety,,Observed,History Of,Self-Reported,Anxiety,HP:0000739,anxiety,MONDO:0011918,,,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Depression,,Observed,History Of,Self-Reported,Depression,HP:0000716,depressive disorder,MONDO:0002050,,,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Hypothyroidism,,Observed,History Of,Self-Reported,Hypothyroidism,HP:0000821,hypothyroidism,MONDO:0005420,,,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Conduct disorder,,Observed,History Of,Self-Reported,,,conduct disorder,MONDO:0005352,,,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Psoriasis,,Observed,History Of,Self-Reported,Psoriasiform dermatitis,HP:0003765,psoriasis,MONDO:0005083,,,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Tonsillectomy,,Observed,History Of,Self-Reported,,,,,tonsillectomy,MAXO:0001081,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Folliculitis,,Observed,History Of,Self-Reported,Folliculitis,HP:0025084,folliculitis,MONDO:0006552,,,,,,
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,BMI,6658,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,18.59405059,kg/m2
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Weight,6658,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,65.3,kg
+M00M00,pt-7bhgbnr3we,M00_009,1,Visit,Height,6658,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,187.4,cm
+M00M00,pt-7bhgbnr3we,M00_009,2,Visit,BMI,6824,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,18.8315729,kg/m2
+M00M00,pt-7bhgbnr3we,M00_009,2,Visit,Weight,6824,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,66.7,kg
+M00M00,pt-7bhgbnr3we,M00_009,2,Visit,Height,6824,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,188.2,cm
+M00M00,pt-hke2i6daky,M00_010,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-hke2i6daky,M00_010,1,Visit,Atrioventricular canal,,Observed,History Of,Self-Reported,Atrioventricular canal defect,HP:0006695,atrioventricular septal defect,MONDO:0020290,,,,,,
+M00M00,pt-hke2i6daky,M00_010,1,Visit,General Seizure,,Observed,History Of,Self-Reported,Seizure,HP:0001250,,,,,,,,
+M00M00,pt-hke2i6daky,M00_010,1,Visit,Anxiety,,Observed,History Of,Self-Reported,Anxiety,HP:0000739,anxiety,MONDO:0011918,,,,,,
+M00M00,pt-hke2i6daky,M00_010,1,Visit,BMI,15895,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,24.37959456,kg/m2
+M00M00,pt-hke2i6daky,M00_010,1,Visit,Weight,15895,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,68.4,kg
+M00M00,pt-hke2i6daky,M00_010,1,Visit,Height,15895,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,167.5,cm
+M00M00,pt-hke2i6daky,M00_010,2,Visit,BMI,16073,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,24.4672437,kg/m2
+M00M00,pt-hke2i6daky,M00_010,2,Visit,Weight,16073,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,69.6,kg
+M00M00,pt-hke2i6daky,M00_010,2,Visit,Height,16073,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,168.66,cm
+M00M00,pt-3ywazybjey,M00_011,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-3ywazybjey,M00_011,1,Visit,Ventricular septal defect (VSD),,Observed,History Of,Self-Reported,Ventricular septal defect,HP:0001629,ventricular septal defect (disease),MONDO:0002070,,,,,,
+M00M00,pt-3ywazybjey,M00_011,1,Visit,Snores,,Observed,History Of,Self-Reported,Snoring,HP:0025267,,,,,,,,
+M00M00,pt-3ywazybjey,M00_011,1,Visit,ADD/ADHD,,Observed,History Of,Self-Reported,Attention deficit hyperactivity disorder,HP:0007018,attention deficit-hyperactivity disorder,MONDO:0007743,,,,,,
+M00M00,pt-3ywazybjey,M00_011,1,Visit,Recurrent otitis media,,Observed,History Of,Self-Reported,Recurrent otitis media,HP:0000403,"otitis media, susceptibility to",MONDO:0008162,,,,,,
+M00M00,pt-3ywazybjey,M00_011,1,Visit,Mixed hearing loss,,Observed,History Of,Self-Reported,Mixed hearing impairment,HP:0000410,"hearing loss, mixed conductive-sensorineural",MONDO:0044001,,,,,,
+M00M00,pt-3ywazybjey,M00_011,1,Visit,BMI,6852,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,22.26738874,kg/m2
+M00M00,pt-3ywazybjey,M00_011,1,Visit,Weight,6852,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,87.5,kg
+M00M00,pt-3ywazybjey,M00_011,1,Visit,Height,6852,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,198.23,cm
+M00M00,pt-3ywazybjey,M00_011,2,Visit,BMI,7052,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,22.29680886,kg/m2
+M00M00,pt-3ywazybjey,M00_011,2,Visit,Weight,7052,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,89.75,kg
+M00M00,pt-3ywazybjey,M00_011,2,Visit,Height,7052,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,200.63,cm
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Cognitive decline,,Observed,History Of,Self-Reported,Mental deterioration,HP:0001268,,,,,,,,
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Cataracts,,Observed,History Of,Self-Reported,Cataract,HP:0000518,cataract (disease),MONDO:0005129,,,,,,
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Low Vitamin D,,Observed,History Of,Self-Reported,Low levels of vitamin D,HP:0100512,vitamin D deficiency,MONDO:0100471,,,,,,
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Asthma,,Observed,History Of,Self-Reported,Asthma,HP:0002099,asthma,MONDO:0004979,,,,,,
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Anxiety,,Observed,History Of,Self-Reported,Anxiety,HP:0000739,anxiety,MONDO:0011918,,,,,,
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,BMI,8554,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,16.93715638,kg/m2
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Weight,8554,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,59.64,kg
+M00M00,pt-22xagzq2c4,M00_012,1,Visit,Height,8554,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,187.65,cm
+M00M00,pt-22xagzq2c4,M00_012,2,Visit,BMI,8689,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,17.70960885,kg/m2
+M00M00,pt-22xagzq2c4,M00_012,2,Visit,Weight,8689,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,62.36,kg
+M00M00,pt-22xagzq2c4,M00_012,2,Visit,Height,8689,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,187.65,cm
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,Farsighted (hyperopia),,Observed,History Of,Self-Reported,Hypermetropia,HP:0000540,hyperopia,MONDO:0004891,,,,,,
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,Global developmental delay,,Observed,History Of,Self-Reported,Global developmental delay,HP:0001263,,,,,,,,
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,Depression,,Observed,History Of,Self-Reported,Depression,HP:0000716,depressive disorder,MONDO:0002050,,,,,,
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,Hypothyroidism,,Observed,History Of,Self-Reported,Hypothyroidism,HP:0000821,hypothyroidism,MONDO:0005420,,,,,,
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,BMI,21685,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,24.19032033,kg/m2
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,Weight,21685,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,66.9,kg
+M00M00,pt-2f4jwwpzi8,M00_013,1,Visit,Height,21685,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,166.3,cm
+M00M00,pt-2f4jwwpzi8,M00_013,2,Visit,BMI,21863,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,24.21674788,kg/m2
+M00M00,pt-2f4jwwpzi8,M00_013,2,Visit,Weight,21863,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,67.53,kg
+M00M00,pt-2f4jwwpzi8,M00_013,2,Visit,Height,21863,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,166.99,cm
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Down Syndrome,,Observed,History Of,Self-Reported,,,Down syndrome,MONDO:0008608,,,,,,
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Ventricular septal defect (VSD),,Observed,History Of,Self-Reported,Ventricular septal defect,HP:0001629,ventricular septal defect (disease),MONDO:0002070,,,,,,
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Psoriasis,,Observed,History Of,Self-Reported,Psoriasiform dermatitis,HP:0003765,psoriasis,MONDO:0005083,,,,,,
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Unknown hearing loss,,Observed,History Of,Self-Reported,Hearing impairment,HP:0000365,hearing loss disorder,MONDO:0005365,,,,,,
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Strabismus (eye turns in or out),,Observed,History Of,Self-Reported,Strabismus,HP:0000486,strabismus,MONDO:0003432,,,,,,
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Tonsillectomy,,Observed,History Of,Self-Reported,,,,,tonsillectomy,MAXO:0001081,,,,
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,BMI,21586,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,17.84182736,kg/m2
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Weight,21586,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,70.23,kg
+M00M00,pt-qb8pj3i4az,M00_014,1,Visit,Height,21586,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,198.4,cm
+M00M00,pt-qb8pj3i4az,M00_014,2,Visit,BMI,21763,Observed,History Of,Clinical,,,,,,,Body Mass Index,NCIT:C16358,18.09333539,kg/m2
+M00M00,pt-qb8pj3i4az,M00_014,2,Visit,Weight,21763,Observed,History Of,Clinical,,,,,,,Body Weight,NCIT:C81328,71.22,kg
+M00M00,pt-qb8pj3i4az,M00_014,2,Visit,Height,21763,Observed,History Of,Clinical,,,,,,,Body Height,NCIT:C164634,198.4,cm
