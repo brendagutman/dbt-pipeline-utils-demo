@@ -1,17 +1,13 @@
 # The name of this file, should follow the standard. {study_id}_study.yaml
 # See README for more information
 
-# study_id: moomoo          # The study identifier.
-# project_id: include       # The name of the project the study is associated with. 
-# pipeline_db: duckdb     # Using duckdb for the demo, but other dbs can be used.
-  
 pipeline:
   db: duckdb
-  structure: inc                       # inc or anvil
-  data_dir: _pipeline_data  # path to datafiles and datafile datadictionary directory from repo root
+  structure: inc
+  data_dir: _pipeline_data
   int_model_name: access_alpha
   exp_model_name: fhir_alpha
-  model_type:                          # macro_model, model, attr_model
+  model_type: 
     src: model
     int: attr_model
     exp: model
@@ -27,7 +23,7 @@ dbt_project:
     materialized: table
     vars:
       target_schema: "fallback_schema"
-      source_table: "participants"  
+      source_table: "include_moomoo_src_condition"  
   int:
     schema: access
     materialized: table
@@ -41,8 +37,8 @@ dbt_project:
 data_dictionary:
   participant:
     identifier: participant_dd.csv 
-    import_type: pg                                           # Source of the dd. ['pg', 'duckdb']
-    format: pipeline_format                                     # Format of the dd. See README for options
+    import_type: pg 
+    format: pipeline_format
   condition:
     identifier: condition_dd.csv
     import_type: pg 
