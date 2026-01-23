@@ -8,7 +8,7 @@
 pipeline:
   db: duckdb
   structure: inc                       # inc or anvil
-  data_dir: dbt_project/_pipeline_data  # path to datafiles and datafile datadictionary directory from repo root
+  data_dir: _pipeline_data  # path to datafiles and datafile datadictionary directory from repo root
   int_model_name: access_alpha
   exp_model_name: fhir_alpha
   model_type:                          # macro_model, model, attr_model
@@ -19,7 +19,7 @@ study:
   study_id: moomoo
   project_id: include
   db_profile: demo_duckdb
-  data_dir: dbt_project/_study_data
+  data_dir: _study_data/moomoo
 
 dbt_project:
   src:
@@ -48,15 +48,17 @@ data_dictionary:
     import_type: pg 
     format: pipeline_format
 
-data_files:
+data_file:
   participant: 
     identifier: 
       - participants.csv
     import_type: duckdb
     dataset_id: 'moomoo_20250119'
+    consent_id: 'MOO'
 
   condition:
     identifier: 
       - condition.csv
     import_type: duckdb
     dataset_id: 'moomoo_20250119'
+    consent_id: 'MOO'
