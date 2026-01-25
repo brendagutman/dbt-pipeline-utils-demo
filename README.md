@@ -24,8 +24,8 @@ Using the pipeline-utils to incorporate new studies to an existing pipeline.
 
 ### Dev suggested resources
 
-
-
+https://harlequin.sh/
+harlequin -r "/tmp/dbt.duckdb"
 
 
 ### DBT suggested Resources:
