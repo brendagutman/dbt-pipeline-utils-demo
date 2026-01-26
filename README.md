@@ -1,3 +1,6 @@
+# dbt-pipeline-utils-demo
+The purpose of this repo is to allow for dbt_pipeline_utils(alias 'pipeline utils') users to familiarize themselves with the package before use within a dbt pipeline. 
+
 ## Workflow Overview
 
 This project uses a three-step process for building data transformation pipelines:
@@ -9,154 +12,50 @@ This project uses a three-step process for building data transformation pipeline
 The workflow is designed to be repeatable and scalable, allowing you to add new studies without manually modifying existing models.
 
 ## Study Configuration Files
+<!-- TODO add data/example_data -->
 
-Each study requires two key components:
 
-### Study YAML File (`_{study_name}_study.yaml`)
-Defines study metadata and table information:
-```yaml
-study_name: moomoo
-description: Moomoo study data
-tables:
-  - name: condition
-    source_dir: condition.csv
-  - name: participant
-    source_dir: participants.csv
-```
-
-## Detailed Workflow with Examples
+## Detailed Workflow
 
 ### Step 1: Generate Pipeline Models
+    - Uses the study config file, and others(…. if something isn’t right ask a teammate), to generate all documents needed for the study, in the correct file locations defined for the organization.  
+    - Rerun the utils generation if needed. Many docs files are generated with the utils. These can be HARD to keep up with if not generating them programmatically. If one of the data dictionaries has an error, fix the data dictionary, and rerun the generation script. The **generation script will not overwrite files** in most cases so as to not remove any major work(sql files especially) if you need these regenerated, delete the files manually before re-Running the generation script.
 
 ```bash
 cd dbt_project
 
+# generate_pipeline -sc {study config path} -d {pipeline data path}
 generate_pipeline -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
 ```
 
-This command:
-- Reads the study YAML configuration
-- Creates source definitions in `models/include/moomoo/`
-- Generates staging models that clean and standardize data
-- Updates dbt dependencies
 
 ### Step 2: Install dbt Dependencies
+Downloads any external dbt packages referenced in `packages.yml`.
 
 ```bash
 dbt deps
 ```
 
-Downloads any external dbt packages referenced in `packages.yml`.
-
 ### Step 3: Import Study Data
+This command:
+- Loads CSV files into the database (DuckDB is used in this demo)
+- Creates source tables that dbt can reference
 
 ```bash
+# import_data -sc {study config path} -d {pipeline data path}
 import_data -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
 ```
 
-This command:
-- Loads CSV files into the database (DuckDB by default)
-- Creates source tables that dbt can reference
-- Validates data against data dictionaries
 
 ### Step 4: View Generated Models
+Displays the results of a specific model to verify the pipeline is working.
 
 ```bash
 dbt show --select include_moomoo_src_condition
 ```
 
-Displays the results of a specific model to verify the pipeline is working.
 
-## Using the Pipeline
-
-### Adding a New Study
-
-1. **Prepare study data:**
-   ```
-   _study_data/new_study/
-   ├── _new_study_study.yaml
-   ├── table1.csv
-   ├── table1_dd.csv
-   ├── table2.csv
-   └── table2_dd.csv
-   ```
-
-2. **Run pipeline generation:**
-   ```bash
-   cd dbt_project
-   generate_pipeline -sc '_study_data/new_study/_new_study_study.yaml' -d '_pipeline_data'
-   dbt deps
-   import_data -sc '_study_data/new_study/_new_study_study.yaml' -d '_pipeline_data'
-   ```
-
-3. **Verify with dbt:**
-   ```bash
-   dbt run
-   dbt test
-   ```
-
-### Exporting Data
-
-Once models are run, you can:
-
-**View results in DuckDB:**
-```bash
-harlequin -r "/tmp/dbt.duckdb"
-```
-
-**Query specific models:**
-```bash
-dbt show --select model_name
-```
-
-**Export to files:**
-Models can be configured to output CSV, Parquet, or other formats.
-
-## Project Model Architecture
-
-### Directory Structure
-
-```
-dbt_project/models/
-├── include/                 # Study-specific models
-│   ├── bleat/              # Bleat study models
-│   ├── moomoo/             # Moomoo study models
-│   └── docs/               # Documentation
-├── access/                 # Access layer (standardized)
-│   └── access_alpha/       # Access models for alpha data
-└── export/                 # Export models (FHIR, etc.)
-    └── fhir_alpha/         # FHIR-compliant export models
-```
-
-### Model Layers
-
-- **Include** — Study source definitions and staging models
-- **Access** — Standardized, deduplicated views of study data
-- **Export** — Final output models (FHIR, flat tables, etc.)
-
-## Advanced Usage
-
-### Running Specific Studies
-
-```bash
-# Run only Moomoo study models
-dbt run --select include_moomoo.*
-
-# Run only Bleat study models
-dbt run --select include_bleat.*
-```
-
-### Testing Models
-
-```bash
-# Run all tests
-dbt test
-
-# Run tests for specific study
-dbt test --select include_moomoo.*
-```
-
-### Generating Documentation
+### Step 5: Generating Documentation
 
 ```bash
 # Generate and serve dbt docs
@@ -165,54 +64,54 @@ dbt docs serve
 # Opens browser at http://localhost:8000
 ```
 
-### Freshness Checks
+### Step 6: Add an additional study
+Repeat steps 1-5 for the `gregor_synthetic` study.
 
-Monitor when source data was last updated:
-```bash
-dbt source freshness
+
+## Project Model Architecture
+
+## Project Structure
+
+```
+.
+├── _study_data/                           # Study-specific data files
+│   ├── gregor_synthetic/                  # gregor_synthetic study data
+│   │   ├── _gregor_synthetic_study.yaml   # Study configuration
+│   │   ├── condition.csv                  # Study data
+│   │   ├── condition_dd.csv               # Data dictionary
+│   │   ├── participants.csv               # Study data
+│   │   └── participants_dd.csv            # Data dictionary
+│   └── moomoo/               # Moomoo study data
+│       ├── _moomoo_study.yaml
+│       ├── condition.csv
+│       ├── condition_dd.csv
+│       ├── participants.csv
+│       └── participants_dd.csv
+├── _pipeline_data/           # Pipeline-specific configuration and templates
+│   └── static/               # Static data models and configurations
+│       └── common_data_models/
+│           ├── additions_template.csv
+│           ├── export/       # Export model templates
+│           └── internal/     # Internal data models
+├── dbt_project/              # Main dbt project directory
+│   ├── models/               # dbt models
+│   │   ├── include/          # Study-specific models (auto-generated)
+│   │   │   ├── gregor_synthetic/
+│   │   │   ├── moomoo/
+│   │   │   └── docs/
+│   │   ├── access/           # Access layer models
+│   │   └── export/           # Export models (FHIR, etc.)
+│   ├── macros/               # dbt macros and utilities
+│   ├── seeds/                # Seed data files
+│   ├── tests/                # dbt tests
+│   ├── run_commands/         # Generated run scripts by study
+│   └── dbt_project.yml       # dbt project configuration (auto-generated)
+├── logs/                     # Log files from pipeline runs
+├── requirements.txt          # Python dependencies
+└── README.md                 
 ```
 
-## Demo
 
-Example walkthrough of the full pipeline:
-
-```bash
-# From the repository root run the requirements
-pip install -r requirements.txt
-
-# Run dbt commands from the dir containing the dbt_project.yml. 
-cd dbt_project
-
-generate_pipeline -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
-
-dbt deps
-
-import_data -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
-
-dbt show --select include_moomoo_src_condition
-
-# Example dbt run commands were generated in: dbt_project/run_commands/include/moomoo/run_moomoo_20250119.sh. 
-
-# Generate and serve documentation
-dbt docs generate && dbt docs serve
-
-# ---------------------------------------------------------
-
-# Once familiar with the pipeline structure try adding another study
-generate_pipeline -sc '_study_data/bleat/_bleat_study.yaml' -d '_pipeline_data'
-
-dbt deps
-
-import_data -sc '_study_data/bleat/_bleat_study.yaml' -d '_pipeline_data'
-
-dbt show --select include_bleat_src_condition
-
-# Generate and serve documentation
-dbt docs generate && dbt docs serve
-```
-
-
-## Documentation & Resources
 
 ### Development Tools
 

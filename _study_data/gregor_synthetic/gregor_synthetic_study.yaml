@@ -1,0 +1,52 @@
+pipeline:
+  db: duckdb
+  structure: anvil
+  data_dir: data # path to datafiles and datafile datadictionary directory from repo root
+  int_model_name: ftd_consensus
+  exp_model_name: tgt_consensus_a
+study:
+  study_id: gregor_synthetic
+  project_id: anvil
+  db_profile: anvil_duckdb
+  data_dir: data/gregor_synthetic
+  
+dbt_project:
+  src:
+    schema: main
+    materialized: table
+    vars:
+  int:
+    schema: main
+    materialized: table
+    vars:
+      target_schema: "fallback_schema"
+      source_table: "fallback_table"  
+  exp:
+    schema: main
+    materialized: table
+    vars:
+      target_schema: "fallback_schema"
+      source_table: "fallback_table"   
+
+data_dictionary:
+  participant:
+    identifier: participant_dd.csv
+    format: pipeline_format
+    import_type: duckdb
+  phenotype:
+    identifier: phenotype_dd.csv
+    format: pipeline_format
+    import_type: duckdb
+data_file:
+  participant: 
+    identifier: 
+      - GREGoR_synthetic_participant_revised07Aug2024.csv 
+    import_type: duckdb    
+    dataset_id: gs_gru
+    consent_id: gru
+  phenotype:
+    identifier: 
+      - GREGoR_synthetic_phenotype.csv
+    import_type: duckdb
+    dataset_id: gs_gru
+    consent_id: gru
