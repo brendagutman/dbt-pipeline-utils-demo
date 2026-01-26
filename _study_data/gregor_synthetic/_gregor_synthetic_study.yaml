@@ -1,0 +1,59 @@
+# The name of this file, should follow the standard. {study_id}_study.yaml
+# See README for more information
+
+
+pipeline:
+  db: duckdb
+  structure: inc
+  data_dir: _pipeline_data # path to datafiles and datafile datadictionary directory from repo root
+  int_model_name: access_alpha
+  exp_model_name: fhir_alpha
+  model_type: 
+    src: model
+    int: attr_model
+    exp: model
+study:
+  study_id: gregor_synthetic
+  project_id: include
+  db_profile: demo_duckdb
+  data_dir: _study_data/gregor_synthetic
+  
+dbt_project:
+  src:
+    schema: main
+    materialized: table
+    vars:
+      target_schema: "fallback_schema"
+      source_table: "include_moomoo_src_condition"  
+  int:
+    schema: access
+    materialized: table
+    vars:
+
+  exp:
+    schema: tgt
+    materialized: table
+    vars:
+
+data_dictionary:
+  participant:
+    identifier: participant_dd.csv
+    import_type: duckdb
+    format: pipeline_format
+  phenotype:
+    identifier: phenotype_dd.csv
+    import_type: duckdb
+    format: pipeline_format
+data_file:
+  participant: 
+    identifier: 
+      - GREGoR_synthetic_participant_revised07Aug2024.csv 
+    import_type: duckdb    
+    dataset_id: gregor_synthetic
+    consent_id: GSYN
+  phenotype:
+    identifier: 
+      - GREGoR_synthetic_phenotype.csv
+    import_type: duckdb
+    dataset_id: gregor_synthetic
+    consent_id: GSYN
