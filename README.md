@@ -14,6 +14,7 @@ The workflow is designed to be repeatable and scalable, allowing you to add new 
 ## Study Configuration Files
 <!-- TODO add data/example_data -->
 
+<!-- TODO Add requirements section -->
 
 ## Detailed Workflow
 
@@ -29,17 +30,9 @@ cd dbt_project
 # import_data -sc {study config path} -d {pipeline data path}
 import_data -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
 
-# Use this command to view available data
-dbt show --select include_moomoo_src_condition
 
 ```
 
-### Step 2: Install dbt Dependencies
-Downloads any external dbt packages referenced in `packages.yml`.
-
-```bash
-dbt deps
-```
 
 ### Step 3: Generate Pipeline Models
     - Uses the study config file, and others(…. if something isn’t right ask a teammate), to generate all documents needed for the study, in the correct file locations defined for the organization.  
@@ -48,6 +41,9 @@ dbt deps
 ```bash
 # generate_pipeline -sc {study config path} -d {pipeline data path}
 generate_pipeline -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
+
+# Use this command to view available data
+dbt show --select include_moomoo_src_condition
 ```
 
 ### Step 4: Run Models
@@ -95,9 +91,8 @@ Practice running models with steps 4 and 5.
 
 ```bash
 dbt clean
-import_data -sc '_study_data/gregor_synthetic/_gregor_synthetic_study.yaml' -d '_pipeline_data'
-dbt deps
 generate_pipeline -sc '_study_data/gregor_synthetic/_gregor_synthetic_study.yaml' -d '_pipeline_data'
+import_data -sc '_study_data/gregor_synthetic/_gregor_synthetic_study.yaml' -d '_pipeline_data'
 ```
 
 

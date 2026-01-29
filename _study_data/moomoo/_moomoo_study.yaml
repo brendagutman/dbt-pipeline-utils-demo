@@ -9,6 +9,7 @@ pipeline:
   exp_model_name: fhir_alpha
   model_type: 
     src: model
+    stb: model
     int: attr_model
     exp: model
 study:
