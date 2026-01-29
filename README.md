@@ -48,8 +48,7 @@ import_data -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
 
 ```
 
-
-### Step 3: Generate Pipeline Models
+### Step 2: Generate Pipeline Models
     - Uses a `{root_dir}/_study_data/{study_id}/_{study_id}_study.yaml` to generate all documents needed for the study, in the correct file locations defined for the organization.  
     - Rerun the utils generation if needed. Many docs files are generated with the utils. These can be HARD to keep up with if not generating them programmatically. If one of the data dictionaries has an error, fix the data dictionary, and rerun the generation script. The **generation script will not overwrite files**. If you need these regenerated, delete the files manually before re-running the generation script.
 
@@ -61,22 +60,24 @@ generate_pipeline -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data
 dbt show --select include_moomoo_src_condition
 ```
 
-### Step 4: Run Models
+### Step 3: Run Models
 Displays the results of a specific model to verify the pipeline is working.
+Additional commands have been generated for you in
 
 ```bash
 # Run these models. alpha_subject and fhir_alpha_subject will be empty tables.
 dbt run --select include_moomoo_src_condition 
 dbt run --select include_moomoo_src_participants
+dbt run --select include_moomoo_src_participants
 dbt run --select alpha_subject --vars '{"source_table": "include_moomoo_src_participants", "target_schema": "access"}'
 dbt run --select fhir_alpha_subject
 
-# View the results of each model. Notice the intermediate and export tables are empty. Because the intermediate model has not been harmonized.
+# View the results of each model. Notice the intermediate and export tables are empty. Because the intermediate model has not been harmonized, all columns are set to NULL.
 dbt show --select alpha_subject
 ```
 
-### Step 5: Harmonize some data and rerun the internal and export models
-Replace the sql in 'dbt_project/models/include/moomoo/participant/include_moomoo_src_participants.sql' with the following.
+### Step 4: Harmonize some data and rerun the internal and export models
+Replace the sql in 'dbt_project/models/include/moomoo/participant/include_moomoo_stg_participants.sql' with the following.
     select
     "participant_global_id"::text as "subject_id",
     'human'::text as "subject_type",
@@ -101,8 +102,8 @@ dbt docs serve
 
 
 ### Step 7: Add an additional study
-Repeat steps 1-3 to add the `gregor_synthetic` study. 
-Practice running models with steps 4 and 5.
+Repeat steps 1-2 to add the `gregor_synthetic` study. 
+Practice running models with steps 3 and 4.
 
 ```bash
 dbt clean
