@@ -14,14 +14,30 @@ The workflow is designed to be repeatable and scalable, allowing you to add new 
 ## Study Configuration Files
 <!-- TODO add data/example_data -->
 
-<!-- TODO Add requirements section -->
+## Requirements
+Running the script locally or working on a branch? Create and activate a virtual environment (recommended):
+** NOTE: SOME projects recommend pyenv.
+```bash
+# Step 1: cd into the directory to store the venv
+
+# Step 2: run this code. It will create the virtual env named utils_venv in the current directory.
+python3 -m venv utils_venv
+
+# Step 3: run this code. It will activate the utils_venv environment
+source utils_venv/bin/activate # On Windows: venv\Scripts\activate
+
+# You are ready for installations! 
+# If you want to deactivate the venv run:
+deactivate
+```
+
 
 ## Detailed Workflow
 
 ### Step 1: Import Study Data
 This command:
 - Loads CSV files into the database (DuckDB is used in this demo)
-- Creates source tables that dbt can reference
+- Creates source tables that dbt can reference. Importing data is not always necessary, but available in this demo.
 
 ```bash
 # Run commands from the dbt_project dir
@@ -30,13 +46,12 @@ cd dbt_project
 # import_data -sc {study config path} -d {pipeline data path}
 import_data -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
 
-
 ```
 
 
 ### Step 3: Generate Pipeline Models
-    - Uses the study config file, and others(…. if something isn’t right ask a teammate), to generate all documents needed for the study, in the correct file locations defined for the organization.  
-    - Rerun the utils generation if needed. Many docs files are generated with the utils. These can be HARD to keep up with if not generating them programmatically. If one of the data dictionaries has an error, fix the data dictionary, and rerun the generation script. The **generation script will not overwrite files** in most cases so as to not remove any major work(sql files especially) if you need these regenerated, delete the files manually before re-Running the generation script.
+    - Uses a `{root_dir}/_study_data/{study_id}/_{study_id}_study.yaml` to generate all documents needed for the study, in the correct file locations defined for the organization.  
+    - Rerun the utils generation if needed. Many docs files are generated with the utils. These can be HARD to keep up with if not generating them programmatically. If one of the data dictionaries has an error, fix the data dictionary, and rerun the generation script. The **generation script will not overwrite files**. If you need these regenerated, delete the files manually before re-running the generation script.
 
 ```bash
 # generate_pipeline -sc {study config path} -d {pipeline data path}
