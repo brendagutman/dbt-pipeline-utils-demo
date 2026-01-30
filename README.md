@@ -74,25 +74,25 @@ Additional commands have been generated for you in
 # Run these models. alpha_subject and fhir_alpha_subject will be empty tables.
 dbt run --select include_moomoo_src_condition; 
 dbt run --select include_moomoo_src_participants;
-dbt run --select include_moomoo_src_participants;
-dbt run --select alpha_subject --vars '{"source_table": "include_moomoo_src_participants", "target_schema": "access"}';
+dbt run --select include_moomoo_stb_subject;
+dbt run --select alpha_subject --vars '{"source_table": "include_moomoo_stb_subject", "target_schema": "access"}';
 dbt run --select fhir_alpha_subject;
 
-# View the results of each model. Notice the intermediate and export tables are empty. Because the intermediate model has not been harmonized, all columns are set to NULL.
-dbt show --select alpha_subject
+# View the results of each model.
+# NOTICE: The intermediate and export tables are empty. Because the intermediate model has not been harmonized, all columns are set to NULL.
+dbt show --select alpha_subject --vars '{"source_table": "include_moomoo_stb_subject", "target_schema": "access"}'
 ```
 
 ### Step 4: Harmonize some data and rerun the internal and export models
-Replace the sql in 'dbt_project/models/include/moomoo/participant/include_moomoo_stg_participants.sql' with the following.
-    select
+Replace the select statement in 'dbt_project/models/include/moomoo/include_moomoo_stb_subject.sql' with the following.
     "participant_global_id"::text as "subject_id",
     'human'::text as "subject_type",
     'human'::text as "organism_type"
-    from {{ ref(source_table) }} 
+
 
 
 ```bash
-dbt show --select alpha_subject
+dbt show --select alpha_subject  --vars '{"source_table": "include_moomoo_stb_subject", "target_schema": "access"}'
 dbt show --select fhir_alpha_subject
 
 ```
@@ -108,8 +108,7 @@ dbt docs serve
 
 
 ### Step 7: Add an additional study
-Repeat steps 1-2 to add the `gregor_synthetic` study. 
-Practice running models with steps 3 and 4.
+By running the commands below, you'll repeat steps 1-2 adding a second study to the pipeline `gregor_synthetic`. 
 
 ```bash
 dbt clean
@@ -117,6 +116,8 @@ generate_pipeline -sc '_study_data/gregor_synthetic/_gregor_synthetic_study.yaml
 import_data -sc '_study_data/gregor_synthetic/_gregor_synthetic_study.yaml' -d '_pipeline_data'
 ```
 
+### Step 8: Practice running commands
+Practice 
 
 
 ### Development Tools
