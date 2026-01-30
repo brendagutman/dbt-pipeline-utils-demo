@@ -68,29 +68,40 @@ dbt show --select include_moomoo_src_condition
 
 ### Step 3: Run Models
 Displays the results of a specific model to verify the pipeline is working.
-Additional commands have been generated for you in
+Additional commands have been generated for you.
 
+Run these models in dbt.
 ```bash
-# Run these models. alpha_subject and fhir_alpha_subject will be empty tables.
 dbt run --select include_moomoo_src_condition; 
 dbt run --select include_moomoo_src_participants;
 dbt run --select include_moomoo_stb_subject;
 dbt run --select alpha_subject --vars '{"source_table": "include_moomoo_stb_subject", "target_schema": "access"}';
 dbt run --select fhir_alpha_subject;
+```
+You can also view the results of a source model.
+```bash
+dbt show --select include_moomoo_src_participants;
+```
 
-# View the results of each model.
-# NOTICE: The intermediate and export tables are empty. Because the intermediate model has not been harmonized, all columns are set to NULL.
+When we view the intermediate and export tables, we will see that they are empty. The work of harmonizing data has not been done yet. These utilities populate the empty shells of the models with NULL. You'll need to harmonize the data to see more!
+
+`include_moomoo_stb_subject`, `alpha_subject`, and `fhir_alpha_subject` will be empty tables with `show` as below:
+```bash
+dbt show --select include_moomoo_stb_subject
 dbt show --select alpha_subject --vars '{"source_table": "include_moomoo_stb_subject", "target_schema": "access"}'
+dbt show --select fhir_alpha_subject
 ```
 
 ### Step 4: Harmonize some data and rerun the internal and export models
-Replace the select statement in 'dbt_project/models/include/moomoo/include_moomoo_stb_subject.sql' with the following.
-    "participant_global_id"::text as "subject_id",
-    'human'::text as "subject_type",
+To see data flow through our dbt models, replace the select statement in 'dbt_project/models/include/moomoo/include_moomoo_stb_subject.sql' with the following:
+```sql
+    select
+    participant_global_id::text as "subject_id",
+    'participant'::text as "subject_type",
     'human'::text as "organism_type"
+```
 
-
-
+Now when you `show` the downstream tables, they will have the correct data!
 ```bash
 dbt show --select alpha_subject  --vars '{"source_table": "include_moomoo_stb_subject", "target_schema": "access"}'
 dbt show --select fhir_alpha_subject
