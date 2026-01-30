@@ -5,8 +5,8 @@ The purpose of this repo is to allow for dbt_pipeline_utils(alias 'pipeline util
 
 This project uses a three-step process for building data transformation pipelines:
 
-1. **Generate Pipeline** — Uses `generate_pipeline` to create dbt models based on study configuration
-2. **Import Data** — Uses `import_data` to load study data into the pipeline database. This is optional in production, but required for this demo.
+1. **Import Data** — Uses `import_data` to load study data into the pipeline database. This is optional in production, but required for this demo.
+2. **Generate Pipeline** — Uses `generate_pipeline` to create dbt models based on study configuration
 3. **Run Models** — Executes `dbt run` to transform the data
 
 The workflow is designed to be repeatable and scalable, allowing you to add new studies without manually modifying existing models.
@@ -15,9 +15,10 @@ The workflow is designed to be repeatable and scalable, allowing you to add new 
 <!-- TODO add data/example_data -->
 
 ## Requirements
-Running the script locally or working on a branch? Create and activate a virtual environment (recommended):
-** NOTE: SOME projects recommend pyenv.
+1. Create and activate a virtual environment (OPTIONAL - recommended):
+** NOTE: SOME recommend using pyenv.
 ```bash
+
 # Step 1: cd into the directory to store the venv
 
 # Step 2: run this code. It will create the virtual env named utils_venv in the current directory.
@@ -31,6 +32,10 @@ source utils_venv/bin/activate # On Windows: venv\Scripts\activate
 deactivate
 ```
 
+2. Install requirements from the root of the repository.
+```bash
+pip install -r requirements.txt
+```
 
 ## Detailed Workflow
 
@@ -40,6 +45,7 @@ This command:
 - Creates source tables that dbt can reference. Importing data is not always necessary, but available in this demo.
 
 ```bash
+
 # Run commands from the dbt_project dir
 cd dbt_project
 
@@ -49,8 +55,8 @@ import_data -sc '_study_data/moomoo/_moomoo_study.yaml' -d '_pipeline_data'
 ```
 
 ### Step 2: Generate Pipeline Models
-    - Uses a `{root_dir}/_study_data/{study_id}/_{study_id}_study.yaml` to generate all documents needed for the study, in the correct file locations defined for the organization.  
-    - Rerun the utils generation if needed. Many docs files are generated with the utils. These can be HARD to keep up with if not generating them programmatically. If one of the data dictionaries has an error, fix the data dictionary, and rerun the generation script. The **generation script will not overwrite files**. If you need these regenerated, delete the files manually before re-running the generation script.
+- Uses a `{root_dir}/_study_data/{study_id}/_{study_id}_study.yaml` to generate all documents needed for the study, in the correct file locations defined for the organization.  
+- Rerun the utils generation if needed. Many docs files are generated with the utils. These can be HARD to keep up with if not generating them programmatically. If one of the data dictionaries has an error, fix the data dictionary, and rerun the generation script. The **generation script will not overwrite files**. If you need these regenerated, delete the files manually before re-running the generation script.
 
 ```bash
 # generate_pipeline -sc {study config path} -d {pipeline data path}
@@ -66,11 +72,11 @@ Additional commands have been generated for you in
 
 ```bash
 # Run these models. alpha_subject and fhir_alpha_subject will be empty tables.
-dbt run --select include_moomoo_src_condition 
-dbt run --select include_moomoo_src_participants
-dbt run --select include_moomoo_src_participants
-dbt run --select alpha_subject --vars '{"source_table": "include_moomoo_src_participants", "target_schema": "access"}'
-dbt run --select fhir_alpha_subject
+dbt run --select include_moomoo_src_condition; 
+dbt run --select include_moomoo_src_participants;
+dbt run --select include_moomoo_src_participants;
+dbt run --select alpha_subject --vars '{"source_table": "include_moomoo_src_participants", "target_schema": "access"}';
+dbt run --select fhir_alpha_subject;
 
 # View the results of each model. Notice the intermediate and export tables are empty. Because the intermediate model has not been harmonized, all columns are set to NULL.
 dbt show --select alpha_subject
